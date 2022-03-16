@@ -30,6 +30,7 @@ ul {
   background-color: white;
   padding: 10px 15px;
   transition: all 0.8s ease;
+  position: relative;
 }
 
 .menu-ctn li:hover {
@@ -37,6 +38,21 @@ ul {
   background-color: lightblue;
 }
 
-.drop-down {
+#drop-down {
   display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: salmon;
+  z-index: 1;
+  text-align: center;
+}
+
+#drop-down li {
+  padding: 10px 15px;
+}
+
+#drop-down.active {
+  display: block;
 }
